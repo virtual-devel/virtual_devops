@@ -1,3 +1,3 @@
-# devops_project
+# Devops project
 
 Hello world
