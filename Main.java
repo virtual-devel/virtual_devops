@@ -1,3 +1,6 @@
 /**
  * Javadoc.
  */
+
+public class Main {}
+
