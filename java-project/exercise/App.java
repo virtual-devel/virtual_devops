@@ -9,3 +9,11 @@ public final class App {
 
     }
 }
+
+public static List<String> getNames() {
+    var names = new LinkedList<String>();
+    names.add("jack");
+    names.add("tina smith");
+    names.add("paul bond");
+    return names;
+}
