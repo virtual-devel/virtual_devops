@@ -51,7 +51,7 @@ public final class App implements Consumer<String>, Predicate<String>,
     }
 
     /**
-     * OVerride boolean test.
+     * Override boolean test.
      */
     // return true if you want to keep t in List, otherwise return false
     @Override
