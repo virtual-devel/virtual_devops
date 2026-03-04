@@ -10,6 +10,10 @@ public class Mammal {
         System.out.println("meow");
     }
 
+    /**
+     * Give birth.
+     */
     public void giveBirth() {
+        System.out.println("giving birth");
     }
 }
