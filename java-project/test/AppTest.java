@@ -34,4 +34,12 @@ public class AppTest {
         assertTrue(predicate.test("Hello"));
         assertFalse(predicate.test("Hi"));
     }
+
+    @Test
+    public void testFunctionApply() {
+        Function<String, String> function = new App();
+        assertEquals("HELLO", function.apply("hello"));
+        assertEquals("WORLD", function.apply("world"));
+    }
+
 }
