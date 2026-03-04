@@ -1,8 +1,17 @@
 body {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(167, 248, 248);
+}
+
+p {
+    text-align: center;
 }
 
 #id {
     color: red;
+}
+
+.class {
+    color: blue;
 }
