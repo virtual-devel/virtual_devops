@@ -22,6 +22,7 @@ public class AppTest {
         System.setOut(new PrintStream(outContent));
     }
 
+    // Its wings are too small to get its fat little body off the ground.
     @Test
     public void testConsumerAccept() {
         Consumer<String> consumer = new App();
