@@ -15,7 +15,7 @@ public class Main {
 
             double result;
 
-            switch(operator) {
+            switch (operator) {
                 case "+":
                     result = num1 + num2;
                     System.out.println("Result: " + result);
@@ -43,9 +43,10 @@ public class Main {
                 default:
                     System.out.println("Error: Invalid operator.");
             }
-        } catch(Exception e) {
+        } catch (Exception e) {
             System.out.println("Something went wrong.");
             return;
         }
+        sc.close();
     }
 }
