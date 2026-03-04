@@ -5,26 +5,24 @@ import java.util.LinkedList;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 import java.util.function.Function;
+import java.util.*;
 
 /**
  * THis is a class to implement functions.
  */
 public final class App implements Consumer<String>, Predicate<String>,
-Function<String, String> {
+        Function<String, String> {
     private static final int DEF_NUM = 5;
 
     public final class App {
-        var names = getNames();
-        for (String name : names) {
+        var names = getNames();for(
+        String name:names)
+        {
             System.out.println(name);
         }
         var cars = List.of("skoda", "mercedes", "bmw", "volkswagen");
 
-        App app = new App();
-        cars.stream()
-            .filter(app)
-            .map(app)
-            .forEach(app);
+        App app = new App();cars.stream().filter(app).map(app).forEach(app);
     }
 
     public static List<String> getNames() {
@@ -34,7 +32,8 @@ Function<String, String> {
         names.add("paul bond");
         return names;
     }
-     @Override
+
+    @Override
     public void accept(final String t) {
         System.out.print(t + "\n");
     }
