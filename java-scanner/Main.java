@@ -32,10 +32,14 @@ public class Main {
                 break;
 
             case "/":
-                result = num1 / num2;
-                System.out.println("Result: " + result);
-                break;
-
+                if (num2 == 0) {
+                    System.out.println("Error: Division by zero is not allowed.");
+                    break;
+                } else {
+                    result = num1 / num2;
+                    System.out.println("Result: " + result);
+                    break;
+                }
             default:
                 System.out.println("Error: Invalid operator.");
         }
