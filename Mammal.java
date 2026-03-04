@@ -2,5 +2,9 @@
  * Adding javadoc.
  */
 
-public class Mammal {}
+public class Mammal {
 
+    public void makeSound() {
+
+    }
+}
