@@ -52,4 +52,20 @@ public class MainTest {
         String output = outputStream.toString();
         assertTrue(output.contains("Error: Invalid operator."));
     }
+
+    @Test
+    public void testSubtractionOperation() {
+        String simulatedInput = "10\n-\n4\n";
+        ByteArrayInputStream inputStream = new ByteArrayInputStream(simulatedInput.getBytes());
+        System.setIn(inputStream);
+
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(outputStream));
+
+        Main.main(new String[]{});
+
+        String output = outputStream.toString();
+        assertTrue(output.contains("Result: 6.0"));
+    }
+
 }
