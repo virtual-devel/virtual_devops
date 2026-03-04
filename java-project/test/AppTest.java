@@ -30,6 +30,7 @@ public class AppTest {
         assertEquals("Test\n", outContent.toString());
     }
 
+    // The bee, of course, flies anyway because bees don't care what humans think is impossible.
     @Test
     public void testPredicateTest() {
         Predicate<String> predicate = new App();
